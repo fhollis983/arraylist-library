@@ -47,20 +47,20 @@ public class UserMenu {
                 System.out.println(Library.filterSubject(data, subject));
             }
             else if(choice == 6) { // Search for a book
-                System.out.println("Enter title: ");
+                System.out.print("Enter title: ");
                 title = scanner.nextLine();
                 System.out.println(Library.search(data, title));
             }
             else if(choice == 7) { // Add a book
-                System.out.println("Enter title: ");
+                System.out.print("Enter title: ");
                 title = scanner.nextLine();
-                System.out.println("Enter subject: ");
+                System.out.print("Enter subject: ");
                 subject = scanner.nextLine();
-                System.out.println("Enter year: ");
+                System.out.print("Enter year: ");
                 year = Integer.valueOf(scanner.nextLine());
-                System.out.println("Enter pages: ");
+                System.out.print("Enter pages: ");
                 pages = Integer.valueOf(scanner.nextLine());
-                System.out.println("Enter rating (double): ");
+                System.out.print("Enter rating (double): ");
                 rating = Double.valueOf(scanner.nextLine());
                 book = new Book(title, subject, year, pages, rating);
                 data.add(book);
